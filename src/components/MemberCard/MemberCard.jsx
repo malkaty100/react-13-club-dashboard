@@ -17,8 +17,9 @@ export default function MemberCard({ member, isSelected, onSelect }) {
   <div className={styles.avatar}>
     {n[0][0]+n[1][0]}
  </div>
+ <div>
  <p className={styles.name}>{member.name}</p>
- <span className={styles.badge}>{member.role}</span>
- <button disabled={!member.isActive} className={`${styles.roleButton} ${styles[member.role.toLowerCase()]}`} style={{backgroundColor:member.role==='Leader'?'blue':member.role==='Member'?'green':'purple'}}></button>
+ <span className={styles.badge}>{member.role}</span></div>
+ <button disabled={!member.isActive} className={`${styles.roleButton} ${styles[member.role.toLowerCase()]}`}>contact</button>
   </div>
 }
