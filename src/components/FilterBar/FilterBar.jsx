@@ -17,5 +17,13 @@ export default function FilterBar({
 }) {
   // TODO: a checkbox inside a <label> with the text "Show only active members"
   // TODO: two buttons: "List" and "Grid"
-  return null
+
+  return <div className={styles.filterBar}>
+  <label for="show" className={styles.toggle}>Show only active members</label>
+  <input type='checkbox' id="show" className={styles.toggle} onChange={onToggleActive} checked={showOnlyActive}/>
+  <div className={styles.layoutSwitch}>
+    <button className={layout==='list'?styles.active:''} onClick={()=>{onLayoutChange('list')}}>List</button>
+    <button className={layout==='grid'?styles.active:''} onClick={()=>{onLayoutChange('grid')}}>Grid</button>
+  </div>
+  </div>
 }

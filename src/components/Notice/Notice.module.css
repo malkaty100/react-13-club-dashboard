@@ -4,12 +4,20 @@
 
 /* REQUIRED BY THE TESTS: the box */
 .notice {
+   text-align: center;
+
 }
 
 /* REQUIRED BY THE TESTS: yellow background */
 .warning {
+   background-color: rgb(240, 240, 175);
+   border-radius: 15px;
+   border:1px solid rgb(232, 232, 0)
 }
 
 /* REQUIRED BY THE TESTS: blue background */
 .info {
+   background-color: rgb(149, 149, 235);
+   border: 15px;
+   border:1px solid blue
 }

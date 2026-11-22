@@ -16,6 +16,7 @@
 
 /* REQUIRED BY THE TESTS: the button of the current layout */
 .active {
+   background-color: rgb(121, 121, 230);
 }
 
 /* bonus: the search input */

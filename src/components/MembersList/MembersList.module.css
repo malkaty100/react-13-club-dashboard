@@ -8,12 +8,17 @@
 
 /* REQUIRED BY THE TESTS: list layout - one card under the other */
 .list {
+   display: block;
 }
+
 
 /* REQUIRED BY THE TESTS: grid layout - cards in columns */
 .grid {
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
 }
 
 /* the message "No members to show" */
 .empty {
+   color:rgb(107, 67, 67) ;
 }

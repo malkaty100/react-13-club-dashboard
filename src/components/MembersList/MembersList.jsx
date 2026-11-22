@@ -1,4 +1,5 @@
 // MembersList - wraps all the MemberCards and switches between list and grid.
+import MemberCard from '../MemberCard/MemberCard'
 import styles from './MembersList.module.css'
 
 /**
@@ -16,5 +17,11 @@ export default function MembersList({
 }) {
   // TODO: a loop over members -> <MemberCard ... />
   // TODO: if there are no members -> the message "No members to show"
-  return null
+  return <>{members.length>0?
+  <div className={`${styles.membersList} ${styles[layout]}` }>
+ {members.map((member,key)=><MemberCard  key={key} member={member} isSelected={member.id===selectedMemberId} onSelect={onSelect}/>)} 
+  </div>:
+  <h1 className={styles.empty}>No members to show</h1>
+}
+  </>
 }

@@ -4,22 +4,34 @@
 
 /* the whole panel */
 .tasksPanel {
+   text-align: center;
 }
 
 /* the title with the member name */
 .title {
+   text-align: center;
 }
 
 /* the list of tasks */
-.tasks {
-}
+.tasks {display:flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;}
 
 /* one task */
 .task {
+   background-color: white;
+   height: 50px;
+   width: 500px;
+   border-radius: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 /* a done task (e.g. line-through) */
 .done {
+   text-decoration: line-through;
 }
 
 /* the messages "Select a member..." / "No tasks yet" */
